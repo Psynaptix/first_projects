@@ -31,9 +31,14 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
-/ios/Pods/
-/android/app/build/
-/android/gradle/
-/macos/DerivedData/
-.vscode/
-.metadata
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
